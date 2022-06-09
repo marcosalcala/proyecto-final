@@ -1,0 +1,19 @@
+.foot-custom{
+    width: 100vw;
+    background-color: $purpleMain;
+
+    .btn-custom{
+        border-color: $brightPink;
+        color: $brightPink;
+    }
+
+    .btn-custom:hover{
+        border-color: $lightPink;
+        color: $lightPink;
+    }
+    
+    .copyright-custom p{
+        font-family: $fontMain;
+        color: $brightPink;
+    }
+}

@@ -1,0 +1,88 @@
+@import "./variables";
+@import "./header";
+@import "./footer";
+
+.no-margin {
+    margin: 0;
+    background-color: $purpleMain;
+}
+
+.main-container{
+    background: linear-gradient(-45deg, #F582A7, #eb5c93, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    font-family: $fontMain;  
+    color: $purpleMain;
+
+    .index-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .home-image-container img{
+            height: 400;
+            width: 375px;   
+            margin-top: 50px;
+            border-radius: 120px 70px 120px 75px;
+            box-shadow: -22px -13px 29px -3px $purpleMain;
+        }
+
+        .home-intro{
+            display: flex;      
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+
+            h1{
+                padding-top: 75px;
+                font-family: $fontTitle;
+            }
+
+            p{
+                font-weight: 300;   
+                padding: 40px 0px 40px 0px
+            }
+        }
+
+    }   
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.about-me{
+    font-family: $fontMain;  
+    font-weight: 300;
+    text-align: center;
+
+    h3{
+        font-family: $fontTitle;
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+
+    article{
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+}
+.mobile-wrapping img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;   
+}
+
+.carousel-item{
+    padding-bottom: 100px;
+}
