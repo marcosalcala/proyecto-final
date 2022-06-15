@@ -1,6 +1,24 @@
+// declaracion de variables y mixins
+
 $purpleMain: #711A75;
 $lightPink: #F582A7 ; 
 $brightPink: #F10086;
 
 $fontTitle:  'Press Start 2P', cursive;
 $fontMain:  'Roboto', sans-serif;
+
+@mixin headings {
+    font-family: 'Roboto', sans-serif;  
+    color: #711A75;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+@mixin backgroundAnimation {
+    background: linear-gradient(-45deg, #F582A7, #eb5c93, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}

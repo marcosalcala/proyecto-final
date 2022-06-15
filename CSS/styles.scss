@@ -8,9 +8,8 @@
 }
 
 .main-container{
-    background: linear-gradient(-45deg, #F582A7, #eb5c93, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    //  utilizacion de mixin, ver en _variables
+    @include backgroundAnimation();
     font-family: $fontMain;  
     color: $purpleMain;
 
@@ -85,4 +84,65 @@
 
 .carousel-item{
     padding-bottom: 100px;
+}
+
+// utilizacion de mixin, ver en _variables
+
+.heading-title{
+    @include headings();
+}
+
+// ESTILOS SECCION TECNOLOGIAS
+
+.card-container{
+    padding-bottom: 30px;
+    text-align: center;
+    p{
+        font-weight: 300;
+        font-size: 1.5em;
+        padding-bottom: 15px;
+    }
+    .card-custom{
+        background-color: transparent;
+        border: none;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            height: 150px;
+            width: 150px;
+            padding-bottom: 15px;
+        }
+        .card-title-custom {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.main-container-custom{
+    // background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
+	// background-size: 400% 400%;
+    @extend .main-container;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
+    .services-text{
+        text-align: center;
+        font-weight: 300;
+        padding-bottom: 25px;
+    }
+    .text-custom{
+        @extend .services-text;
+    }
+}
+
+.contact-header{
+    text-align: center;
+    p{
+        font-weight: 300;
+    }
+}
+
+.submit-custom{
+    color: #F10086;
+    background-color: #711A75;
 }

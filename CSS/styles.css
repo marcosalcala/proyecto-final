@@ -164,4 +164,81 @@
 .carousel-item {
   padding-bottom: 100px;
 }
+
+.heading-title {
+  font-family: 'Roboto', sans-serif;
+  color: #711A75;
+  font-weight: 300;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+.card-container {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.card-container p {
+  font-weight: 300;
+  font-size: 1.5em;
+  padding-bottom: 15px;
+}
+
+.card-container .card-custom {
+  background-color: transparent;
+  border: none;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card-custom img {
+  height: 150px;
+  width: 150px;
+  padding-bottom: 15px;
+}
+
+.card-container .card-custom .card-title-custom {
+  padding-bottom: 15px;
+}
+
+.main-container-custom {
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+}
+
+.main-container-custom .services-text {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 25px;
+}
+
+.main-container-custom .text-custom {
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header p {
+  font-weight: 300;
+}
+
+.submit-custom {
+  color: #F10086;
+  background-color: #711A75;
+}
 /*# sourceMappingURL=styles.css.map */
