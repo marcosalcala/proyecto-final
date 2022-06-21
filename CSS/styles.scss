@@ -2,9 +2,34 @@
 @import "./header";
 @import "./footer";
 
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    // overflow-x: hidden;
+}
+
 .no-margin {
     margin: 0;
     background-color: $purpleMain;
+}
+
+.menu-container{
+    padding-right: 10px
+}
+
+.hamburger-custom{
+    border: none;
+    margin-right: 15px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .main-container{

@@ -47,12 +47,36 @@
   color: #F10086;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
 .no-margin {
   margin: 0;
   background-color: #711A75;
 }
 
-.main-container {
+.menu-container {
+  padding-right: 10px;
+}
+
+.hamburger-custom {
+  border: none;
+  margin-right: 15px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main-container, .main-container-custom {
   background: linear-gradient(-45deg, #F582A7, #eb5c93, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
@@ -61,7 +85,7 @@
   color: #711A75;
 }
 
-.main-container .index-container {
+.main-container .index-container, .main-container-custom .index-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +101,7 @@
           align-items: center;
 }
 
-.main-container .index-container .home-image-container img {
+.main-container .index-container .home-image-container img, .main-container-custom .index-container .home-image-container img {
   height: 400;
   width: 375px;
   margin-top: 50px;
@@ -86,7 +110,7 @@
           box-shadow: -22px -13px 29px -3px #711A75;
 }
 
-.main-container .index-container .home-intro {
+.main-container .index-container .home-intro, .main-container-custom .index-container .home-intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,12 +127,12 @@
   text-align: center;
 }
 
-.main-container .index-container .home-intro h1 {
+.main-container .index-container .home-intro h1, .main-container-custom .index-container .home-intro h1 {
   padding-top: 75px;
   font-family: "Press Start 2P", cursive;
 }
 
-.main-container .index-container .home-intro p {
+.main-container .index-container .home-intro p, .main-container-custom .index-container .home-intro p {
   font-weight: 300;
   padding: 40px 0px 40px 0px;
 }
@@ -214,19 +238,12 @@
 
 .main-container-custom {
   background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
 }
 
-.main-container-custom .services-text {
+.main-container-custom .services-text, .main-container-custom .text-custom {
   text-align: center;
   font-weight: 300;
   padding-bottom: 25px;
-}
-
-.main-container-custom .text-custom {
-  font-weight: 300;
-  text-align: center;
-  padding-bottom: 15px;
 }
 
 .contact-header {
