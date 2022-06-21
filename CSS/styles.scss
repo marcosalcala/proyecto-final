@@ -3,11 +3,11 @@
 @import "./footer";
 
 
-*{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     overflow-x: hidden;
 }
 
@@ -16,11 +16,11 @@
     background-color: $purpleMain;
 }
 
-.menu-container{
+.menu-container {
     padding-right: 10px
 }
 
-.hamburger-custom{
+.hamburger-custom {
     border: none;
     margin-right: 5px;
 }
@@ -32,10 +32,10 @@
     box-shadow: none;
 }
 
-.main-container{
+.main-container {
     //  utilizacion de mixin, ver en _variables
     @include backgroundAnimation();
-    font-family: $fontMain;  
+    font-family: $fontMain;
     color: $purpleMain;
 
     .index-container {
@@ -44,129 +44,139 @@
         justify-content: space-evenly;
         align-items: center;
 
-        .home-image-container img{
+        .home-image-container img {
             height: 400;
-            width: 375px;   
+            width: 375px;
             margin-top: 50px;
             border-radius: 120px 70px 120px 75px;
         }
 
-        .home-intro{
-            display: flex;      
+        .home-intro {
+            display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
             text-align: center;
 
-            h1{
+            h1 {
                 padding-top: 75px;
                 font-family: $fontTitle;
             }
 
-            p{
-                font-weight: 300;   
+            p {
+                font-weight: 300;
                 padding: 40px 0px 40px 0px
             }
         }
 
-    }   
+    }
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.about-me{
-    font-family: $fontMain;  
+.about-me {
+    font-family: $fontMain;
     font-weight: 300;
     text-align: center;
 
-    h3{
+    h3 {
         font-family: $fontTitle;
         padding-bottom: 20px;
         font-size: 25px;
     }
 
-    article{
+    article {
         padding-top: 15px;
         padding-bottom: 35px;
     }
 }
+
 .mobile-wrapping img {
     max-width: 100%;
     object-fit: cover;
-    border-radius: 12px;   
+    border-radius: 12px;
 }
 
-.carousel-item{
+.carousel-item {
     padding-bottom: 100px;
 }
 
 // utilizacion de mixin, ver en _variables
 
-.heading-title{
+.heading-title {
     @include headings();
 }
 
 // ESTILOS SECCION TECNOLOGIAS
 
-.card-container{
+.card-container {
     padding-bottom: 30px;
     text-align: center;
-    p{
+
+    p {
         font-weight: 300;
         font-size: 1.5em;
         padding-bottom: 15px;
     }
-    .card-custom{
+
+    .card-custom {
         background-color: transparent;
         border: none;
         padding-bottom: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        img{
+
+        img {
             height: 150px;
             width: 150px;
             padding-bottom: 15px;
         }
+
         .card-title-custom {
             padding-bottom: 15px;
         }
     }
 }
 
-.main-container-custom{
+.main-container-custom {
     // background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
-	// background-size: 400% 400%;
+    // background-size: 400% 400%;
     @extend .main-container;
     background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
-    .services-text{
+
+    .services-text {
         text-align: center;
         font-weight: 300;
         padding-bottom: 25px;
     }
-    .text-custom{
+
+    .text-custom {
         @extend .services-text;
     }
 }
 
-.contact-header{
+.contact-header {
     text-align: center;
-    p{
+
+    p {
         font-weight: 300;
     }
 }
 
-.submit-custom{
+.submit-custom {
     color: #F10086;
     background-color: #711A75;
 }
