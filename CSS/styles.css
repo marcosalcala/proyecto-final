@@ -78,6 +78,7 @@
 }
 
 .main-container, .main-container-custom {
+  min-height: calc(100vh - 258px);
   background: linear-gradient(-45deg, #F582A7, #eb5c93, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
@@ -233,6 +234,14 @@
 
 .card-container .card-custom .card-title-custom {
   padding-bottom: 15px;
+}
+
+.card-container .card-custom .card-title-font {
+  font-family: "Press Start 2P", cursive;
+}
+
+.card-container .card-custom .card-text-font {
+  font-weight: 500;
 }
 
 .main-container-custom {

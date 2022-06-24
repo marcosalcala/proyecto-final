@@ -33,6 +33,7 @@
 }
 
 .main-container {
+    min-height: calc(100vh - 258px);
     //  utilizacion de mixin, ver en _variables
     @include backgroundAnimation();
     font-family: $fontMain;
@@ -102,7 +103,6 @@
         padding-bottom: 35px;
     }
 }
-
 .mobile-wrapping img {
     max-width: 100%;
     object-fit: cover;
@@ -148,12 +148,17 @@
         .card-title-custom {
             padding-bottom: 15px;
         }
+        .card-title-font{
+            font-family: $fontTitle;
+        }
+        .card-text-font{
+            font-weight: 500;
+        }
     }
 }
 
 .main-container-custom {
-    // background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
-    // background-size: 400% 400%;
+
     @extend .main-container;
     background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
 
@@ -180,3 +185,5 @@
     color: #F10086;
     background-color: #711A75;
 }
+
+
